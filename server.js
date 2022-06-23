@@ -1,4 +1,6 @@
 //server.js
+//https://stackoverflow.com/questions/14322989/first-heroku-deploy-failed-error-code-h10
+
 const express = require('express');
 const bodyParser = require('body-parser'); // latest version of exressJS now comes with Body-Parser!
 const bcrypt = require('bcrypt-nodejs');
@@ -40,6 +42,6 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 //app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
-app.listen(process.env.PORT, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
   console.log(`app is running on port ${process.env.PORT}`);
 })
