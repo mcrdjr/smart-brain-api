@@ -10,3 +10,7 @@ Final project for ZTM course
 You can grab Clarifai API key [here](https://www.clarifai.com/)
 
 ** Make sure you use postgreSQL instead of mySQL for this code base.
+
+1. to create to cloned repo in my github account
+2. first create the report and then do this
+3. git push --mirror https://github.com/ghuser/repo.git
